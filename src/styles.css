@@ -1,1 +1,221 @@
-/* You can add global styles to this file, and also import other style files */
+.margenGlobal {
+    margin: 50px;
+}
+
+.navbar {
+    padding: 16px 80px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+.pricipaltext {
+    margin-top: 95px;
+    font-weight: 700;
+}
+
+.segundaritext {
+    font-weight: 700;
+}
+
+.container_pricnital {
+    width: 900px;
+}
+
+
+
+
+/*Imagen principal*/
+
+.principalImage {
+    width: 900px;
+    height: 600px;
+}
+
+.pricipal {
+    margin-top: 160px;
+}
+
+.full-height-card {
+    height: 100vh;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCard {
+    width: 100%;
+    height: 50%;
+}
+
+.seccion-1-button {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+/*section 2*/
+
+.textsecicion2title{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.textsecicion2subtile{
+    margin-top: -15px;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+/**/
+/*testimonio*/
+
+.carousel-inner {
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    text-align: center;
+    background: #d4d0d0;
+    height: 400px !important;
+}
+
+.fondoTestimonio {
+    padding: 35px;
+    background: #F2F4F8;
+}
+
+.carousel-control-next {
+    right: 39px;
+}
+
+.carousel-control-prev {
+    left: 39px;
+}
+
+/**/
+
+
+
+
+
+/*footer*/
+.footer {
+    height: 120px;
+    background: #697077;
+}
+
+
+.footer p,
+.footer a,
+.footer i {
+    color: #fff !important;
+}
+
+.footer ul.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.centertextfootter {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.icontfooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 767.98px) {
+    .card-body {
+        flex-direction: column;
+    }
+
+    .principalImage {
+        width: auto;
+        height: auto;
+    }
+
+    .container_pricnital {
+        width: auto;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .pricipal {
+        margin-top: 100px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        text-align: center;
+        background: #d4d0d0;
+        height: 450px !important;
+    }
+
+    .carousel-control-next {
+        right: -48px;
+    }
+
+    .carousel-control-prev {
+        left: -45px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+
+    .margenGlobal {
+        margin: 2px;
+    }
+
+    .seccion-5 {
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+
+    .imgCard {
+        width: 100%;
+        height: 80%;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+/*seciotn 2 */
+
+
+.textsecicion2title{
+    font-size: 15px;
+}
+
+.textsecicion2subtile{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+}
