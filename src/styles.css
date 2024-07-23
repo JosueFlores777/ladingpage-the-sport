@@ -11,10 +11,31 @@ a {
 }
 
 
+
+.secion-1 {
+    margin-top: 105px;
+}
+
+.btn-separado {
+    margin-right: 1rem;
+}
+
 .pricipaltext {
     margin-top: 95px;
     font-weight: 700;
 }
+
+.titleseccion1 {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.margetextseccion1,
+.margetextseccion2,
+.margetextseccion3 {
+    margin-top: 35px;
+}
+
 
 .segundaritext {
     font-weight: 700;
@@ -68,16 +89,44 @@ a {
 
 /*section 2*/
 
-.textsecicion2title{
+.textsecicion2title {
     font-weight: 700;
     font-size: 20px;
 }
 
-.textsecicion2subtile{
+.textsecicion2subtile {
     margin-top: -15px;
     font-weight: 700;
     font-size: 42px;
 }
+
+/**/
+
+.textsecicion4subtilecontenido {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.textsecicion4textcontenido {
+    width: 60%;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 65px;
+}
+
+.fondoconteni {
+    background: #86898e7a;
+}
+
+.margintopContenido {
+    margin: 15px;
+}
+/*
+.margintopContenido {
+    margin-top: 165px;
+}
+*/
 
 /**/
 /*testimonio*/
@@ -109,7 +158,20 @@ a {
 
 /**/
 
+.btn-square {
+    border-radius: 0 !important;
+    padding: 0 16px 0 16px;
+    width: 172px;
+    height: 48px;
+}
 
+.btn-square-nav {
+    margin-left: 35px;
+    border-radius: 0 !important;
+    padding: 0 16px 0 16px;
+    width: 152px;
+    height: 48px;
+}
 
 
 
@@ -155,6 +217,33 @@ a {
 
     .container_pricnital {
         width: auto;
+    }
+
+    .textsecicion4textcontenido {
+        width: 80%;
+        margin: auto;
+        margin-top: 35px;
+        margin-bottom: 55px;
+    }
+
+    .btn-square {
+        padding: 0 16px 0 16px;
+        width: 149px;
+        height: 48px;
+        margin-bottom: 45px;
+    }
+
+    .secion-1 {
+        margin-bottom: 95px !important;
+    }
+
+    .margenGlobal{
+        margin: 20px;
+    }
+
+    .btn-square-nav {
+        margin-left: 0px;
+        margin-top: 15px;
     }
 }
 
@@ -202,20 +291,118 @@ a {
         height: 80%;
     }
 
+    .textsecicion4textcontenido {
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+
     .navbar {
         padding: 15px;
     }
 
-/*seciotn 2 */
+    /*seciotn 2 */
 
 
-.textsecicion2title{
-    font-size: 15px;
+    .textsecicion2title {
+        font-size: 15px;
+    }
+
+    .textsecicion2subtile {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .secion-1 {
+        margin-top: 95px;
+    }
+
 }
 
-.textsecicion2subtile{
-    font-weight: 700;
-    font-size: 30px;
+
+
+
+/**/
+
+.hidden1 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
 }
 
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden1 {
+        transition: none;
+    }
+}
+
+
+#containerScrollInfiteHome {
+    display: grid;
+    /*min-block-size: 100vh;*/
+    font-family: system-ui;
+    font-size: 1.125rem;
+}
+
+
+#containerScrollInfiteHome {
+    margin-top: 50px;
+}
+
+.scrollerHome {
+    overflow: hidden;
+    max-width: auto;
+}
+
+.scrollerHome__inner {
+    height: 235px;
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: max-content;
+}
+
+.scrollerHome[data-animated="true"] {
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scrollerHome[data-animated="true"] .scrollerHome__inner {
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scrollerHome[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.scrollerHome[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.scrollerHome[data-speed="fast"] {
+    --_animation-duration: 10s;
+}
+
+.scrollerHome[data-speed="slow"] {
+    --_animation-duration: 60s;
+}
+
+.titleCarruWorkHome {
+    font-family: var(--Urbanist);
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
 }
