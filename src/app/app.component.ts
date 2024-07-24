@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavComponentComponent } from './nav/nav-component/nav-component.component';
-import { FooterComponentComponent } from './footer/footer-component/footer-component.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NavComponentComponent,FooterComponentComponent],
+  imports: [RouterOutlet,HeaderComponent,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'ladingpage-the-sport';
+  title = 'thesport';
 }
