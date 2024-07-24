@@ -273,6 +273,7 @@ a {
 
 @media (max-width: 500px) {
 
+
     .pricipal {
         margin-top: 100px;
     }
@@ -289,11 +290,11 @@ a {
     }
 
     .carousel-control-next {
-        right: -48px;
+        right: -40px;
     }
 
     .carousel-control-prev {
-        left: -45px;
+        left: -40px;
     }
 
     .lead {
@@ -340,6 +341,14 @@ a {
     .secion-1 {
         margin-top: 95px;
     }
+
+
+    /*testimonio*/
+
+    .testimonial {
+        width: 100%;
+  
+      }
 
 }
 
