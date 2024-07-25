@@ -11,6 +11,40 @@ a {
 }
 
 
+.btn-primary{
+    background:#E19800 !important;
+    border-color: #E19800 !important;
+}
+
+.btn-outline-secondary{
+    background-color: #FFF4ED;
+    color: #C41E0A;
+    border-color: #C41E0A;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #C41E0A;
+    color: #FFF4ED;
+    border-color: #C41E0A;
+}
+
+.btn-outline-primary{
+    background-color: #FFF4ED;
+    color: #C41E0A;
+    border-color: #C41E0A;
+}
+
+.btn-outline-primary:hover{
+    background-color: #C41E0A;
+    color: #FFF4ED;
+    border-color: #C41E0A;
+}
+
+.prinipal{
+    background: #FFFEEA;
+}
+
+
 
 .secion-1 {
     margin-top: 105px;
@@ -117,7 +151,7 @@ a {
 }
 
 .fondoconteni {
-    background: #86898e7a;
+    background: #FFFCC5;
 }
 
 .margintopContenido {
@@ -141,13 +175,13 @@ a {
 
 .carousel-item {
     text-align: center;
-    background: #F2F4F8;
+    background: #FFE31C;
     height: auto !important;
 }
 
 .fondoTestimonio {
     padding: 35px;
-    background: #F2F4F8;
+    background: #FFE31C;
 }
 
 .carousel-control-next {
@@ -191,7 +225,7 @@ a {
 /*footer*/
 .footer {
     height: auto;
-    background: #697077;
+    background: #482300;
 }
 
 
@@ -279,7 +313,6 @@ a {
 }
 
 @media (max-width: 500px) {
-
 
     .pricipal {
         margin-top: 100px;
@@ -436,8 +469,8 @@ a {
     --_animation-duration: 10s;
 }
 
-.scrollerHome[data-speed="slow"] {
-    --_animation-duration: 60s;
+.scrollerHome[data-speed="slow2"] {
+    --_animation-duration: 40s;
 }
 
 .titleCarruWorkHome {
