@@ -1,5 +1,6 @@
 .margenGlobal {
     margin: 50px;
+    margin-top: 90px;
 }
 
 .navbar {
@@ -12,14 +13,21 @@ a {
 
 
 .top-bar {
-    background-color: #7C440B;
+    background-color: #1E192B;
+}
+
+.btn-link{
+    color: #BB6C02 !important;
+    font-weight: 500;
 }
 
 .top-bar p {
     margin-bottom: 0;
     color: #ffffff;
 }
-
+.slick-dots{
+    margin-bottom: none !important;
+}
 
 .btn-primary {
     background: #E19800 !important;

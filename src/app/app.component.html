@@ -13,8 +13,10 @@
     <div class="my-5 margenGlobal ">
       <div class="row ">
         <div class="col-md-6 d-flex flex-column justify-content-center ">
-          <h2 class="titleseccion1">Host Design Meeting From Anywhere</h2>
-          <p class="margetextseccion1">Tu párrafo aquí. Este es un ejemplo de cómo puedes colocar texto en esta columna.
+          <h2 class="titleseccion1">Venite de una vez al spot donde hay de todo.</h2>
+          <p class="margetextseccion1">The Spot es el centro comercial donde podés encontrar todo lo que
+            necesitas en un solo lugar. Desde la carne para el asado hasta la compañía de internet para
+            tu casa de playa.
           </p>
           <div class="d-flex">
             <button type="button" class="btn btn-primary btn-square me-2">Botón 1 <i
@@ -24,15 +26,14 @@
         </div>
         <div class="col-md-6 d-flex align-items-center justify-content-center">
           <div class="image-container">
-            <img
-              src="https://images.unsplash.com/photo-1644864544390-c44a752d91c5?q=80&w=1874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="img-fluid rounded custom-dimensions" alt="...">
+            <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions"
+              alt="...">
           </div>
         </div>
       </div>
     </div>
   </div>
-  <br> <br> 
+  <br> <br>
 
   <!--Section 1 end-->
   <div id="containerScrollInfiteHome ">
@@ -101,10 +102,99 @@
       <div class="row">
         <div class="col-sm-6 d-flex justify-content-center align-items-center order-1">
           <div class="card-body text-start">
-            <h2 class="titleseccion2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <h2 class="titleseccion2">Nuestros comercios:</h2>
             <p class="textseccion2">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros
-              scelerisque sed.
-              Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.</p>
+              En The Spot, contamos con una amplia variedad de comercios para satisfacer todas tus necesidades. Conocé
+              algunos de nuestros principales establecimientos:
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-end order-2">
+          <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section 2 end-->
+
+  <div class=" align-items-center justify-content-center margenGlobal">
+    <div class="my-5 margenGlobal">
+      <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem class="slide px-2" *ngFor="let comercio of comercios; trackBy: trackByFn">
+          <div class="card" style="width: auto; ">
+            <img [src]="comercio.img" class="card-img-top" alt="{{ comercio.nombre }}">
+            <div class="card-body">
+              <h5 class="card-title" style="height: 24px;">{{ comercio.nombre }}</h5>
+              <p class="text-start" style="height: 79px;">{{ comercio.descripcion }}</p>
+              <a [href]="comercio.link" class="btn-link">More Info <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+
+
+
+  <!---->
+
+  <div class="align-items-center justify-content-center margenGlobal">
+    <div class="my-5 margenGlobal">
+      <div class="row">
+        <div class="card" style="width: auto">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <p class="card-title text-start">Cajero Banco Cuscatlan</p>
+          </div>
+        </div>
+        <div class="card" style="width: auto;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <p class="card-title text-start">Cajero Banco Hipotecario</p>
+          </div>
+        </div>
+        <div class="card" style="width: auto;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <p class="card-title text-start">Cajero Athena Botcoin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--Section 3 start-->
+  <div class="align-items-center justify-content-center margenGlobal seccion-5">
+    <div class="my-5 margenGlobal">
+      <div class="row">
+        <!-- Columna para la imagen -->
+        <div class="col-sm-6 d-flex justify-content-start align-items-center order-2 order-sm-1 ">
+          <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions"
+              alt="...">
+        </div>
+        <!-- Columna para el texto -->
+        <div class="col-sm-6 d-flex justify-content-center align-items-center order-1 order-sm-2">
+          <div class="card-body">
+            <h2 class="titleseccion3">Ubicación</h2>
+            <p class="textseccion3">Estamos ubicados a unos metros posterior al redondel Surf City en dirección a San Blas. Con fácil acceso y amplio estacionamiento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section 3end-->
+
+  <!--Section 4 start-->
+  <div class=" align-items-center justify-content-center margenGlobal">
+    <div class="my-5 margenGlobal">
+      <div class="row">
+        <div class="col-sm-6 d-flex justify-content-center align-items-center order-1">
+          <div class="card-body text-start">
+            <h2 class="titleseccion2">¿Buscas un local?</h2>
+            <p class="textseccion2">Si deseas conocer la disponibilidad de locales, puedes contactarnos al: 7854-8869.</p>
           </div>
         </div>
         <div class="col-sm-6 d-flex justify-content-end order-2">
@@ -115,232 +205,14 @@
       </div>
     </div>
   </div>
-  <!--Section 2 end-->
-
-  <!--Section 3 start-->
-  <div class="align-items-center justify-content-center margenGlobal seccion-5">
-    <div class="my-5 margenGlobal">
-      <div class="row">
-        <!-- Columna para la imagen -->
-        <div class="col-sm-6 d-flex justify-content-start align-items-center order-2 order-sm-1 ">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1661381087101-5ac6567bdf53?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="img-fluid rounded" alt="...">
-        </div>
-        <!-- Columna para el texto -->
-        <div class="col-sm-6 d-flex justify-content-center align-items-center order-1 order-sm-2">
-          <div class="card-body">
-            <h2 class="titleseccion3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-            <p class="textseccion3">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros
-              scelerisque sed.
-              Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Section 3end-->
-
-
-</div>
-
-<div class="fondoconteni d-flex  flex-column align-items-center justify-content-center min-vh-100 ">
-  <div class="text-center my-5 margintopContenido ">
-    <h2 class="textsecicion4subtilecontenido">
-      Lorem ipsum dolor sit amet, molestie mattis.
-    </h2>
-
-    <p class="textsecicion4textcontenido">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at molestie mattis.
-    </p>
-    <img
-      src="https://plus.unsplash.com/premium_photo-1678286770016-6306ad61df9b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      class="img-fluid rounded textsecicion4textcontenido" alt="...">
-  </div>
-</div>
-
-
-
-<div class="container-fluid mt-5">
-
-  <!--Section 4 start-->
-  <div class="align-items-center justify-content-center margenGlobal">
-    <div class="my-5 margenGlobal">
-      <p class="text-center textsecicion2title">Caption</p>
-      <h2 class="text-center textsecicion2subtile">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Bibendum amet at molestie mattis.</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5 justify-content-center">
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.unsplash.com/photo-1621449939380-3d6065d83b95?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.unsplash.com/photo-1529088558886-c429274eba6c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="img-fluid" alt="...">
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.unsplash.com/photo-1564419965579-5da68ffdf3af?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="img-fluid" alt="...">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
   <!--Section 4 end-->
+
+
 </div>
 
-<!--Section 5 start-->
-<div class="fondoTestimonio">
-  <div class="align-items-center justify-content-center margenGlobal mb-3">
-    <div class="my-5 margenGlobal">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <!-- Carousel wrapper -->
-          <div id="carouselBasicExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
-            <!-- Inner -->
-            <div class="carousel-inner">
-              <!-- Carousel items grouped by 2 for desktop, 1 for mobile -->
-              <div class="carousel-item active">
-                <div class="row gx-5">
-                  <div class="col-md-6 col-12 d-flex justify-content-center">
-                    <div class="testimonial">
-                      <div class="mt-5 mb-4">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                          class="rounded-circle img-fluid shadow-1-strong" alt="sample image" width="100"
-                          height="100" />
-                      </div>
-                      <p class="text-muted mb-0">- Anna Morian</p>
-                      <p class="lead font-italic mx-4 mx-md-5">
-                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-                        numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-12 d-flex justify-content-center d-none d-md-flex">
-                    <div class="testimonial">
-                      <div class="mt-5 mb-4">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
-                          class="rounded-circle img-fluid shadow-1-strong" alt="sample image" width="100"
-                          height="100" />
-                      </div>
-                      <p class="text-muted mb-0">- Teresa May</p>
-                      <p class="lead font-italic mx-4 mx-md-5">
-                        "Neque cupiditate assumenda in maiores repudiandae mollitia adipisci maiores
-                        repudiandae mollitia consectetur adipisicing architecto elit sed adipiscing
-                        elit."
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Single item -->
-              <div class="carousel-item">
-                <div class="row gx-5">
-                  <div class="col-md-6 col-12 d-flex justify-content-center">
-                    <div class="testimonial">
-                      <div class="mt-5 mb-4">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
-                          class="rounded-circle img-fluid shadow-1-strong" alt="sample image" width="100"
-                          height="100" />
-                      </div>
-                      <p class="text-muted mb-0">- Kate Allise</p>
-                      <p class="lead font-italic mx-4 mx-md-5">
-                        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur est laborum neque cupiditate assumenda in
-                        maiores."
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-12 d-flex justify-content-center d-none d-md-flex">
-                    <div class="testimonial">
-                      <div class="mt-5 mb-4">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                          class="rounded-circle img-fluid shadow-1-strong" alt="sample image" width="100"
-                          height="100" />
-                      </div>
-                      <p class="text-muted mb-0">- Anna Morian</p>
-                      <p class="lead font-italic mx-4 mx-md-5">
-                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-                        numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Inner -->
 
-            <!-- Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBasicExample"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselBasicExample"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-          </div>
-          <!-- Carousel wrapper -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!--Section 5 end -->
 
-<!--Section 6 start -->
-
-<div class="container-fluid">
-  <div class="align-items-center justify-content-center margenGlobal">
-    <div class="my-5 margenGlobal">
-      <div class=" my-5">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <div class="caption">CAPTION</div>
-            <h1 class="display-5 acciontitle">
-              Bibendum amet at molestie mattis.
-            </h1>
-            <p class="lead">
-              Rhoncus morbi et augue nec, in id ullamcorper at sit.
-            </p>
-          </div>
-          <div class="col-md-4 d-flex text-md-end">
-            <button type="button" class="btn btn-primary me-2 btn-square">
-              Primary Action
-            </button>
-            <button type="button" class="btn btn-outline-primary  btn-square">
-              segundary Action
-            </button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <app-footer></app-footer>
 <router-outlet />
