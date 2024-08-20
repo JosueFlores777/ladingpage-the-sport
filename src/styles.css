@@ -1,4 +1,4 @@
-.margenGlobal {
+.margenGlobal, .backpadi {
     margin: 50px;
     margin-top: 90px;
 }
@@ -12,11 +12,12 @@ a {
 }
 
 
+
 .top-bar {
     background-color: #1E192B;
 }
 
-.btn-link{
+.btn-link {
     color: #BB6C02 !important;
     font-weight: 500;
 }
@@ -25,9 +26,7 @@ a {
     margin-bottom: 0;
     color: #ffffff;
 }
-.slick-dots{
-    margin-bottom: none !important;
-}
+
 
 .btn-primary {
     background: #E19800 !important;
@@ -323,7 +322,7 @@ a {
         width: auto;
     }
 
-    .margenGlobal {
+    .margenGlobal, .backpadi {
         margin: 25px;
     }
 
@@ -351,7 +350,20 @@ a {
         height: 230px;
     }
 
+    .card .bank {
+        object-fit: contain !important;
+        width: 100%;
+        height: auto;
+    }
+
 }
+
+.card .bank {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
 
 @media (max-width: 767.98px) {
     .card-body {
@@ -385,7 +397,7 @@ a {
         margin-bottom: 95px !important;
     }
 
-    .margenGlobal {
+    .margenGlobal, .backpadi {
         margin: 20px;
     }
 
@@ -423,6 +435,20 @@ a {
 }
 
 @media (max-width: 500px) {
+
+    .slick-dots {
+        position: absolute;
+        bottom: -65px !important;
+    }
+
+    .slick-slide {
+         margin: 0 5px; 
+    }
+
+    .backpadi{
+        margin: -2px;
+        margin-top: 140px;
+    }
     .custom-dimensions {
         object-fit: cover;
         width: 100%;
@@ -526,6 +552,8 @@ a {
         margin-right: 0;
     }
 
+  
+
 }
 
 
@@ -537,23 +565,25 @@ a {
 .logocarruel img {
     width: 200px;
     height: 100px;
-    margin-right: 10px;
+    margin-right: 0;
     object-fit: contain;
 }
 
 
 .container-scroll-infinite-home {
-    height: 160px; 
-    width: 100%; 
-    background: #273B80 !important; 
-    align-items: center; 
-    justify-content: center;
-}
-  
-
-  .scroller-home {
+    margin-top: 50px;
+    height: 160px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
+    overflow: hidden; 
+}
+
+
+.scroller-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
