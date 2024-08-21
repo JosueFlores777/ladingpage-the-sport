@@ -1,11 +1,19 @@
-.margenGlobal,
+.margenGlobal {
+    margin: 50px;
+    /* margin-top: 90px;*/
+}
+
 .backpadi {
     margin: 50px;
-    margin-top: 90px;
+    margin-top: -110px !important;
 }
 
 .navbar {
     padding: 16px 80px;
+}
+
+nav {
+    border-bottom: 1px solid #FDC301;
 }
 
 a {
@@ -66,11 +74,6 @@ a {
     margin-top: 180px !important;
 }
 
-.card img {
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
-}
 
 .secion-1 {
     margin-top: 105px;
@@ -114,14 +117,15 @@ a {
 
 .image-vector-Secction1seagull2 {
     margin-top: 40px;
-   
+
 }
-.secction1-vector-seagull2{
+
+.secction1-vector-seagull2 {
     width: 90px;
 }
 
 
-.seccion1Contet{
+.seccion1Contet {
     z-index: 5;
     margin-top: -100px;
 }
@@ -216,7 +220,7 @@ a {
     font-weight: 700;
     font-size: 42px;
     line-height: 46.2px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .textseccion2,
@@ -309,9 +313,19 @@ a {
     height: 48px;
 }
 
+.btn-square-nav-header {
+    margin-left: 25px;
+}
+
 .acciontitle {
     font-weight: 700;
     font-size: 42px;
+}
+
+.text-header {
+    font-weight: 400;
+    font-size: 16px;
+    color: #43494C;
 }
 
 
@@ -353,7 +367,73 @@ a {
     justify-content: flex-end;
 }
 
+.bg-image {
+    background-image: url('./assets/img/vector/section-ubicacion-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.seccion5texttitle {
+    font-size: 42px;
+    font-weight: 700;
+    color: #21272A;
+}
+
+.seccion5textcontent {
+    font-size: 18px;
+    font-weight: 400;
+    color: #414343;
+}
+
+.contentSecction5 {
+    padding: 60px;
+}
+
+.btn-section5 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    width: 188px;
+    padding: 12px 16px 12px 16px;
+    background-color: #E19800;
+}
+
+.section6 {
+    height: auto;
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: #7C440B;
+}
+
+.titleseccion6 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #FFFCC5;
+}
+
+.textseccion6 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.roundedPersonali {
+    border-radius: 30px 30px 0 0;
+}
+
+.image-vector-palmSeccion6 {
+    margin-top: -399px;
+}
+
+.secction6-vector-palm {
+    width: 120px;
+}
+
+
 @media (max-width: 1200px) {
+
+  
     .btn-square {
         width: auto;
     }
@@ -363,10 +443,15 @@ a {
         margin: 25px;
     }
 
+    .backpadi {
+
+        margin-top: -60px !important;
+    }
+
     .titleseccion2,
     .titleseccion3 {
         font-size: 39px;
-        margin-bottom: 45px;
+        margin-bottom: 25px;
         line-height: 37.2px;
     }
 
@@ -381,28 +466,52 @@ a {
         margin-right: 35px;
     }
 
-    .card img {
-        object-fit: cover;
-        width: 100%;
-        height: 230px;
-    }
-
     .bank {
         object-fit: contain !important;
         width: 100%;
         height: auto;
     }
 
+    .secction1-vector-palm {
+        width: 250px;
+        margin-bottom: -50px;
+    }
+
+
 }
 
 .bank {
     object-fit: contain;
-    width: 350px !important;
     height: auto;
+}
+
+@media (max-width: 967.98px) {
+
+    .image-vector-palm {
+        margin-top: -200px;
+    }
+
+    .secction1-vector-palm {
+        width: 200px;
+        margin-bottom: -50px;
+    }
+
+    .Secction1seagull {
+        margin-right: 55px;
+    }
+
 }
 
 
 @media (max-width: 767.98px) {
+
+  
+
+    .secction1-vector-palm {
+        width: 250px;
+        margin-bottom: -50px;
+    }
+
     .card-body {
         flex-direction: column;
     }
@@ -470,9 +579,80 @@ a {
     .custom-dimensions {
         margin-bottom: 45px;
     }
+
+    .bank {
+        width: 350px;
+    }
+
+    .seccion5texttitle {
+        font-size: 41px;
+        font-weight: 700;
+        color: #21272A;
+    }
+
+    .seccion5textcontent {
+        font-size: 18px;
+        font-weight: 400;
+        color: #414343;
+    }
+
+
+    .btn-section5 {
+        font-size: 18px;
+        width: 178px;
+    }
+
+
+
+    .titleseccion6 {
+        font-size: 39px;
+        font-weight: 700;
+        color: #FFFCC5;
+    }
+
+    .textseccion6 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+    .image-vector-palmSeccion6 {
+        margin-top: -390px;
+    }
+
+    .secction6-vector-palm {
+        width: 120px;
+    }
+
 }
 
 @media (max-width: 500px) {
+    .titleseccion1 {
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    .titleseccion1text {
+        font-size: 17.2px;
+    }
+
+    .secction1-vector-palm {
+        width: 220px;
+    }
+
+    .image-vector-palm {
+        margin-top: -52px;
+    }
+
+    .Secction1seagull {
+        margin-right: 5px;
+    }
+
+    .image-vector-Secction1seagull2 {
+        margin-bottom: 110px;
+    }
+
 
     .slick-dots {
         position: absolute;
@@ -577,18 +757,53 @@ a {
     .textseccion2,
     .textseccion3 {
         font-size: 14px;
-        margin-bottom: 45px;
+        margin-bottom: -45px;
     }
 
     /*testimonio*/
 
-    .testimonial {
-        width: 100%;
-
+    .bank {
+        width: 300px;
     }
 
-    .margenfooterlogo {
-        margin-right: 0;
+
+    .seccion5texttitle {
+        font-size: 40px;
+        font-weight: 700;
+        color: #21272A;
+    }
+
+    .seccion5textcontent {
+        font-size: 17px;
+        font-weight: 400;
+        color: #414343;
+    }
+
+
+    .btn-section5 {
+        font-size: 18px;
+        width: 178px;
+    }
+
+    .titleseccion6 {
+        font-size: 39px;
+        font-weight: 700;
+        color: #FFFCC5;
+    }
+
+    .textseccion6 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+    .image-vector-palmSeccion6 {
+        margin-top: -390px;
+    }
+
+    .secction6-vector-palm {
+        width: 120px;
     }
 
 

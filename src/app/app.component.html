@@ -1,12 +1,12 @@
 <app-header></app-header>
 
-
 <div class=" mt-5 prinipal">
   <br>
   <br> <br>
   <br>
   <br>
-  <!--Section 1 start-->
+
+  <!--start Section 1-->
   <div class="Secction1seagull">
     <div class="image-vector-Secction1seagull1 d-flex justify-content-end">
       <img src="./assets/img/vector/vector-header-01.png" class="secction1-vector-seagull1" alt="...">
@@ -41,10 +41,10 @@
       </div>
     </div>
   </div>
+
   <div class="image-vector-palm">
     <img src="./assets/img/vector/vector-palm-tree.png" class="secction1-vector-palm" alt="...">
   </div>
-
 
   <div class=" d-flex align-items-center justify-content-center">
     <div class="image-container">
@@ -52,41 +52,38 @@
     </div>
   </div>
 
-  <div class="container-scroll-infinite-home">
+  <div class="container-scroll-infinite-home" id="Comercios">
     <ngx-slick-carousel class="scroller-home" #slickModal="slick-carousel" [config]="slideConfig2"> <br>
       <div ngxSlickItem *ngFor="let logo of logos" class="scroller-home__inner logocarruel">
         <img [src]="logo" alt="" />
       </div>
     </ngx-slick-carousel>
   </div>
-
-  <!--Section 1 end-->
+  <!--End Section 1 -->
 
   <br> <br>
 
 </div>
 
 <div class="container-fluid mt-2">
-  <!--Section 2 start-->
-  <div class=" align-items-center justify-content-center margenGlobal">
+
+  
+  <!--Start Section 3-->
+  <div class="d-flex align-items-center justify-content-center margenGlobal" id="Comercios">
     <div class="my-5 margenGlobal">
       <div class="row">
-        <div class="col-sm-6 d-flex justify-content-center align-items-center order-1">
-          <div class="card-body text-start">
+        <div class="d-flex justify-content-center align-items-center order-1">
+          <div class="card-body text-center">
             <h2 class="titleseccion2">Nuestros comercios:</h2>
-            <p class="textseccion2">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros
-              En The Spot, contamos con una amplia variedad de comercios para satisfacer todas tus necesidades. Conocé
-              algunos de nuestros principales establecimientos:
+            <p class="textseccion2">
+              En The Spot, contamos con una amplia variedad de comercios para satisfacer <br>
+              todas tus necesidades. Conocé algunos de nuestros principales establecimientos:
             </p>
           </div>
-        </div>
-        <div class="col-sm-6 d-flex justify-content-end order-2">
-          <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions" alt="...">
         </div>
       </div>
     </div>
   </div>
-  <!--Section 2 end-->
 
   <div class=" align-items-center justify-content-center margenGlobal">
     <div class="my-5 margenGlobal">
@@ -104,82 +101,92 @@
       </ngx-slick-carousel>
     </div>
   </div>
+  <!--End section 3 -->
 
-
-
-  <!---->
-
-  <div class="col backpadi">
-    <div class=" row backpadi ">
-      <div class=" col-md-4 mb-3">
-        <div class=" h-100">
-          <img class=" bank" src="./assets/img/bank/banco-01.png" alt="Card image cap">
-
-        </div>
-      </div>
-      <div class=" col-md-4 mb-3 ">
-        <div class=" h-100">
-          <img class="bank" src="./assets/img/bank/banco-02.png" alt="Card image cap">
-
-        </div>
-      </div>
-      <div class="col-12 col-md-4 mb-3 ">
-        <div class=" h-100">
-          <img class=" bank" src="./assets/img/bank/banco-03.png" alt="Card image cap">
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <!--Section 3 start-->
-  <div class="align-items-center justify-content-center margenGlobal seccion-5">
+  <!--Start section 4-->
+  <div class="d-flex align-items-center justify-content-center margenGlobal">
     <div class="my-5 margenGlobal">
       <div class="row">
-        <!-- Columna para la imagen -->
-        <div class="col-sm-6 d-flex justify-content-start align-items-center order-2 order-sm-1 ">
-          <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions" alt="...">
-        </div>
-        <!-- Columna para el texto -->
-        <div class="col-sm-6 d-flex justify-content-center align-items-center order-1 order-sm-2">
-          <div class="card-body">
-            <h2 class="titleseccion3">Ubicación</h2>
-            <p class="textseccion3">Estamos ubicados a unos metros posterior al redondel Surf City en dirección a San
-              Blas. Con fácil acceso y amplio estacionamiento</p>
+        <div class="d-flex justify-content-center align-items-center order-1">
+          <div class="card-body text-center">
+            <h2 class="titleseccion2">¿Necesitas Retirar Dinero?</h2>
+            <p class="textseccion2">
+              Contamos con los cajeros de las siguientes entidades.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--Section 3end-->
 
-  <!--Section 4 start-->
+  <div class="d-flex align-items-center justify-content-center">
+    <div class="row backpadi">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 d-flex align-items-center justify-content-center">
+          <img class="card-img bank" src="./assets/img/bank/banco-01.png" alt="Card image cap">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 d-flex align-items-center justify-content-center">
+          <img class="card-img bank" src="./assets/img/bank/banco-02.png" alt="Card image cap">
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card h-100 border-0 d-flex align-items-center justify-content-center">
+          <img class="card-img bank"  id="Ubicacion" src="./assets/img/bank/banco-03.png" alt="Card image cap">
+        </div>
+      </div >
+    </div>
+  </div>
+
+  <!--End section 4 -->
+
+  <!--Start section 5 -->
+  <div class="align-items-center justify-content-center margenGlobal seccion-5">
+    <div class="my-5 margenGlobal">
+      <div class="bg-image rounded-4">
+        <div class="contentSecction5">
+          <h1 class="seccion5texttitle">Ubicación</h1>
+          <p class="seccion5textcontent">
+            Estamos ubicados a unos metros posterior al redondel <br> Surf City en dirección a San Blas. Con fácil
+            acceso y <br>amplio estacionamiento
+          </p>
+          <button type="button" class="btn btn-section5">Waze <i class="bi bi-arrow-right"></i></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--End section 5 -->
+</div>
+
+<!--Start section 6 -->
+<div class="section6 roundedPersonali" id="Contacto">
   <div class=" align-items-center justify-content-center margenGlobal">
     <div class="my-5 margenGlobal">
-      <div class="row">
+      <div class="row ">
         <div class="col-sm-6 d-flex justify-content-center align-items-center order-1">
           <div class="card-body text-start">
-            <h2 class="titleseccion2">¿Buscas un local?</h2>
-            <p class="textseccion2">Si deseas conocer la disponibilidad de locales, puedes contactarnos al: 7854-8869.
+            <h2 class="titleseccion6">¿Buscas un local?</h2>
+            <p class="textseccion6">Si deseas conocer la disponibilidad de locales, puedes <br> contactarnos al:
+              7854-8869.
             </p>
           </div>
         </div>
         <div class="col-sm-6 d-flex justify-content-end order-2">
-          <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions" alt="...">
+          <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded-4 custom-dimensions"
+            alt="...">
         </div>
       </div>
     </div>
   </div>
-  <!--Section 4 end-->
-
-
 </div>
 
-
-
+<div class="image-vector-palmSeccion6 d-flex justify-content-end">
+  <img src="./assets/img/vector/vector-yellow-palm-tree.png" class="secction6-vector-palm" alt="...">
+</div>
+<!--End section 6 -->
 
 
 <app-footer></app-footer>
