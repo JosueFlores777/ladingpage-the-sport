@@ -821,11 +821,16 @@ a {
     }
 
 
-    .titleseccion2,
+    .titleseccion2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
     .titleseccion3 {
         font-size: 30px;
-        margin-bottom: 25px;
+        margin-bottom: 65px;
     }
+  
 
     .textseccion2,
     .textseccion3 {
