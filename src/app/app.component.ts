@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent,FooterComponent,SlickCarouselModule,CommonModule],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, SlickCarouselModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -32,23 +32,23 @@ export class AppComponent {
     { nombre: 'Movistar', img: './assets/img/content/picture 14.jpg', descripcion: 'Telefonía móvil y fija, Internet, celulares, promociones y más.', link: 'https://www.instagram.com/movistar_sv/?hl=es' },
     { nombre: 'Don Chicharron', img: './assets/img/content/picture 15.jpg', descripcion: 'Siempre en ruta! 🐷🚗 ES 📍 Los mejores chicharrones de C.A.', link: 'https://www.instagram.com/donchicharron.sv/?hl=es' },
     { nombre: 'Seaside Sourdough', img: './assets/img/content/picture 16.jpg', descripcion: 'Imperdiet purus pellentesque sit mi nibh sit integer faucibus.', link: 'https://www.instagram.com/seaside.sourdough/' }
-];
+  ];
   slideConfig = {
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
     responsive: [
       {
-        breakpoint: 1424, 
+        breakpoint: 1424,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 1021, 
+        breakpoint: 1021,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
@@ -77,7 +77,7 @@ export class AppComponent {
     './assets/img/logo/PORTA_logo.png',
     './assets/img/logo/soya-nutribar-logo.png',
     './assets/img/logo/tengo-todo-market-logo.png'
-    ,    './assets/img/logo/agua-inmaculada-logo.png',
+    , './assets/img/logo/agua-inmaculada-logo.png',
     './assets/img/logo/banco-atlantida.png',
     './assets/img/logo/Logo Cabal.png',
     './assets/img/logo/Logo La Neveria.png',
@@ -88,7 +88,7 @@ export class AppComponent {
     './assets/img/logo/PORTA_logo.png',
     './assets/img/logo/soya-nutribar-logo.png',
     './assets/img/logo/tengo-todo-market-logo.png'
-];
+  ];
 
   slideConfig2 = {
     slidesToShow: 5,
@@ -96,35 +96,35 @@ export class AppComponent {
     autoplay: true,
     autoplaySpeed: 0,
     infinite: true,
-    speed: 5000, 
+    speed: 5000,
     cssEase: 'linear',
     arrows: false,
     dots: false,
     pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 1024, 
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 4.5, 
+          slidesToShow: 4.5,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 968, 
+        breakpoint: 968,
         settings: {
-          slidesToShow: 3, 
+          slidesToShow: 3,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2, 
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480, 
+        breakpoint: 480,
         settings: {
           slidesToShow: 1.3,
           slidesToScroll: 1
@@ -132,7 +132,7 @@ export class AppComponent {
       }
     ]
   };
-  
+
 
   trackByFn(index: number, item: any): number {
     return index;

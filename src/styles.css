@@ -504,7 +504,7 @@ a {
 
 @media (max-width: 1200px) {
 
-  
+
     .btn-square {
         width: auto;
     }
@@ -576,7 +576,9 @@ a {
 
 @media (max-width: 767.98px) {
 
-  
+    .resposenone {
+        display: none;
+    }
 
     .secction1-vector-palm {
         width: 250px;
