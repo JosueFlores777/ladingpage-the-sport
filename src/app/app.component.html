@@ -1,42 +1,59 @@
 <app-header></app-header>
 
 
-<div class="container-fluid mt-5 prinipal">
+<div class=" mt-5 prinipal">
   <br>
   <br> <br>
   <br>
   <br>
   <!--Section 1 start-->
-  <!--Section 1 start-->
+  <div class="Secction1seagull">
+    <div class="image-vector-Secction1seagull1 d-flex justify-content-end">
+      <img src="./assets/img/vector/vector-header-01.png" class="secction1-vector-seagull1" alt="...">
+    </div>
+    <div class="image-vector-Secction1seagull2 d-flex justify-content-end">
+      <img src="./assets/img/vector/vector-header-02.png" class="secction1-vector-seagull2" alt="...">
+    </div>
+  </div>
+
   <div class="prinipal align-items-center justify-content-center margenGlobal">
 
     <div class="my-5 margenGlobal ">
       <div class="row ">
-        <div class="col-md-6 d-flex flex-column justify-content-center ">
-          <h2 class="titleseccion1">Venite de una vez al spot donde hay de todo.</h2>
-          <p class="margetextseccion1">The Spot es el centro comercial donde podés encontrar todo lo que
-            necesitas en un solo lugar. Desde la carne para el asado hasta la compañía de internet para
-            tu casa de playa.
-          </p>
-          <div class="d-flex">
+        <div class="d-flex flex-column align-items-center justify-content-center text-center seccion1Contet">
+          <div class="container text-center">
+            <h1 class="titleseccion1  mx-auto">Venite de una vez al spot</h1>
+            <h1 class="titleseccion1  mx-auto"> donde hay de todo.</h1>
+            <p class="margetextseccion1 titleseccion1text  mx-auto">
+              The Spot es el centro comercial donde podés encontrar todo lo que <br> necesitas en un solo lugar. Desde
+              la carne para el asado hasta la <br> compañía de internet para tu casa de playa.
+            </p>
+          </div>
+
+          <div class="d-flex mt-3">
             <button type="button" class="btn btn-primary btn-square me-2">Waze <i
-                    class="bi bi-arrow-right"></i></button>
+                class="bi bi-arrow-right"></i></button>
             <button type="button" class="btn btn-outline-secondary btn-square">Google Maps</button>
-        </div>
-        </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-          <div class="image-container">
-            <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions"
-              alt="...">
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
-  <br> <br>
+  <div class="image-vector-palm">
+    <img src="./assets/img/vector/vector-palm-tree.png" class="secction1-vector-palm" alt="...">
+  </div>
+
+
+  <div class=" d-flex align-items-center justify-content-center">
+    <div class="image-container">
+      <img src="./assets/img/content/hero-section-the-spot.jpg" class="img-fluid rounded custom-dimensions" alt="...">
+    </div>
+  </div>
 
   <div class="container-scroll-infinite-home">
-    <ngx-slick-carousel class="scroller-home" #slickModal="slick-carousel" [config]="slideConfig2">   <br>
+    <ngx-slick-carousel class="scroller-home" #slickModal="slick-carousel" [config]="slideConfig2"> <br>
       <div ngxSlickItem *ngFor="let logo of logos" class="scroller-home__inner logocarruel">
         <img [src]="logo" alt="" />
       </div>
@@ -94,32 +111,26 @@
 
   <div class="col backpadi">
     <div class=" row backpadi ">
-        <div class=" col-md-4 mb-3">
-            <div class="card h-100">
-                <img class="card-img-top bank" src="./assets/img/bank/banco-01.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-start mb-5 mt-2">Cajero Banco Cuscatlan</h5>
-                </div>
-            </div>
+      <div class=" col-md-4 mb-3">
+        <div class=" h-100">
+          <img class=" bank" src="./assets/img/bank/banco-01.png" alt="Card image cap">
+
         </div>
-        <div class=" col-md-4 mb-3 ">
-            <div class="card h-100">
-                <img class="card-img-top bank" src="./assets/img/bank/banco-02.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-start mb-5 mt-2">Cajero Banco Hipotecario</h5>
-                </div>
-            </div>
+      </div>
+      <div class=" col-md-4 mb-3 ">
+        <div class=" h-100">
+          <img class="bank" src="./assets/img/bank/banco-02.png" alt="Card image cap">
+
         </div>
-        <div class="col-12 col-md-4 mb-3 ">
-            <div class="card h-100">
-                <img class="card-img-top bank" src="./assets/img/bank/banco-03.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-start mb-5 mt-2">Cajero Athena Botcoin</h5>
-                </div>
-            </div>
+      </div>
+      <div class="col-12 col-md-4 mb-3 ">
+        <div class=" h-100">
+          <img class=" bank" src="./assets/img/bank/banco-03.png" alt="Card image cap">
+
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
 
 
@@ -130,14 +141,14 @@
       <div class="row">
         <!-- Columna para la imagen -->
         <div class="col-sm-6 d-flex justify-content-start align-items-center order-2 order-sm-1 ">
-          <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions"
-              alt="...">
+          <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions" alt="...">
         </div>
         <!-- Columna para el texto -->
         <div class="col-sm-6 d-flex justify-content-center align-items-center order-1 order-sm-2">
           <div class="card-body">
             <h2 class="titleseccion3">Ubicación</h2>
-            <p class="textseccion3">Estamos ubicados a unos metros posterior al redondel Surf City en dirección a San Blas. Con fácil acceso y amplio estacionamiento</p>
+            <p class="textseccion3">Estamos ubicados a unos metros posterior al redondel Surf City en dirección a San
+              Blas. Con fácil acceso y amplio estacionamiento</p>
           </div>
         </div>
       </div>
@@ -152,13 +163,13 @@
         <div class="col-sm-6 d-flex justify-content-center align-items-center order-1">
           <div class="card-body text-start">
             <h2 class="titleseccion2">¿Buscas un local?</h2>
-            <p class="textseccion2">Si deseas conocer la disponibilidad de locales, puedes contactarnos al: 7854-8869.</p>
+            <p class="textseccion2">Si deseas conocer la disponibilidad de locales, puedes contactarnos al: 7854-8869.
+            </p>
           </div>
         </div>
         <div class="col-sm-6 d-flex justify-content-end order-2">
-          <img src="./assets/img/content/ubicacion-the-spot.jpg"
-              class="img-fluid rounded custom-dimensions" alt="...">
-      </div>
+          <img src="./assets/img/content/ubicacion-the-spot.jpg" class="img-fluid rounded custom-dimensions" alt="...">
+        </div>
       </div>
     </div>
   </div>
