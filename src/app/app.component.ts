@@ -37,7 +37,7 @@ export class AppComponent {
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
-    arrows: false,
+    arrows: true,
     infinite: true,
     responsive: [
       {

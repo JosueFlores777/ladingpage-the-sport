@@ -88,21 +88,37 @@
     </div>
   </div>
 
+
+
   <div class=" align-items-center justify-content-center margenGlobal">
     <div class="my-5 margenGlobal">
 
-      <ngx-slick-carousel class="carousel" [config]="slideConfig">
-        <div ngxSlickItem class="slide px-2" *ngFor="let comercio of comercios; trackBy: trackByFn">
-          <div class="card" style="width: auto; ">
-            <img [src]="comercio.img" class="card-img-top" alt="{{ comercio.nombre }}">
-            <div class="card-body">
-              <h5 class="card-title" style="height: 24px;">{{ comercio.nombre }}</h5>
-              <p class="text-start" style="height: 79px;">{{ comercio.descripcion }}</p>
-              <a [href]="comercio.link" class="btn-link">More Info <i class="bi bi-arrow-right"></i></a>
+      <div class="carousel-container">
+        <button class="custom-prev" data-bs-slide="prev"  (click)="slickCarousel.slickPrev()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+          class="bi bi-chevron-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M11.354 1.354a.5.5 0 0 1 0 .707L5.207 8l6.147 5.939a.5.5 0 0 1-.708.707l-6.5-6.5a.5.5 0 0 1 0-.707l6.5-6.5a.5.5 0 0 1 .707 0z" />
+        </svg></button>
+        <ngx-slick-carousel #slickCarousel class="carousel" [config]="slideConfig">
+          <div ngxSlickItem class="slide px-2" *ngFor="let comercio of comercios; trackBy: trackByFn">
+            <div class="card" style="width: auto; ">
+              <img [src]="comercio.img" class="card-img-top" alt="{{ comercio.nombre }}">
+              <div class="card-body">
+                <h5 class="card-title" style="height: 24px;">{{ comercio.nombre }}</h5>
+                <p class="text-start" style="height: 79px;">{{ comercio.descripcion }}</p>
+                <a [href]="comercio.link" class="btn-link">More Info <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-      </ngx-slick-carousel>
+        </ngx-slick-carousel>
+        <button class="custom-next" (click)="slickCarousel.slickNext()" data-bs-slide="next">  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+          class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M4.646 14.854a.5.5 0 0 1 0-.708L10.793 8 4.646 1.854a.5.5 0 1 1 .708-.708l6.5 6.5a.5.5 0 0 1 0 .708l-6.5 6.5a.5.5 0 0 1-.708 0z" />
+        </svg></button>
+      </div>
+
+
     </div>
   </div>
   <!--End section 3 -->
